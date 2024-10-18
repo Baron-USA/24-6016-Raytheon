@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Support Application</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <img src="new-logo.png" alt="Company Logo" class="logo">
+
+
+        <!-- REPLACE CUSTOMER NAME, MODEL, AND SERIAL -->
+            <h1>Welcome, RTX Raytheon</h1>
+            <p>Model: BA-HV-400-400S</p>
+            <p>Serial: 24106016</p>
+
+
+        </header>
+        <nav>
+            <button id="manualButton">Operating Manual</button>
+            <button id="contactButton">Contact Us</button>
+            <button id="venderButton">Vendor Literature</button>
+            <button id="websiteButton">Website</button>
+            <button id="exitButton">Exit</button>
+        </nav>
+        <!-- Vendor Literature Dropdown -->
+        <div id="venderLiteratureSection" style="display: none;">
+            <label for="literatureSelect">Select a Component Manual:</label>
+            <select id="literatureSelect">
+                <option value="" disabled selected>Select a manual</option>
+
+
+        <!-- REPLACE VENDOR LIT PDF NAME, GIVE NAME FOR DROP DOWN MENU, AND ADD OR REMOVE AS MANY AS YOU NEED -->
+                <option value="Vendor Lit/Colfax 3E-118 & 118P.pdf">Discharge Pump</option>
+                <option value="Vendor Lit/Colfax 3E-143, 143J & 162.pdf">Inlet Pump</option>
+                <option value="Vendor Lit/Colfax General Operation.pdf">Pump Operations</option>
+                <option value="Vendor Lit/CP_020_Dry_Compressing_Vacuum_Pumps_EN_2021.pdf">Vacuum Pump</option>
+                <option value="Vendor Lit/EZ-Zone PM Express.pdf">Temperature Controller</option>
+                <option value="Vendor Lit/Fulflo Relief Valves.pdf">Relief Valves</option>
+                <option value="Vendor Lit/Hedland MR Flowmeter.pdf">Flowmeter</option>
+                <option value="Vendor Lit/Keyence FS-V31.pdf">Foam Detector</option>
+                <option value="Vendor Lit/VGC-301 Vacuum Gauge.pdf">Vacuum Gauge</option>
+
+
+
+            </select>
+            <button id="openLiteratureButton">Open Manual</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
